@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Backgroung-Changer</title>
+    <style>
+        h1{ text-align: center;}
+        .inside{
+            text-align: center; 
+        }
+        p{text-align: justify; width: 900px; margin: 10px auto; font-size: 20px;}
+
+        .color{text-align: right;}
+        .btn{display: inline-block; 
+             width: 20px;
+              height: 20px;
+            border: 2px solid black;
+            border-radius: 50%; }
+        #white{background-color: white;}
+        #green{background-color: green;}
+        #violet{background-color: violet;}
+        #black{background-color: black;}
+        #aqua{background-color: aqua;}
+
+    </style>
+</head>
+<body>
+    <div class="color">
+        <span id="white" class="btn" onclick="changeBackground('white')"></span>
+        <span id="green" class="btn" onclick="changeBackground('green')"></span>
+        <span id="violet" class="btn" onclick="changeBackground('violet')"></span>
+        <span id="black" class="btn" onclick="changeBackground('black')"></span>
+        <span id="aqua" class="btn" onclick="changeBackground('aqua')"></span>
+    </div>
+    <h1 class="text">About-Us</h1>
+    <div class="inside">
+        <img class="text" src="https://cdn.pixabay.com/photo/2018/03/18/15/26/villa-3237114__340.jpg" alt="">
+        <p class="text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Necessitatibus impedit quam sed aut eius, doloremque eum quo molestias nesciunt sit consectetur laudantium enim aliquam, vero ipsam amet ea, recusandae nam ut nobis hic dolor? Optio eligendi quia, aut quam magni aspernatur illo dolores eius fuga quae provident? Explicabo, dicta autem veniam error assumenda sunt dolorem expedita, soluta cupiditate unde totam accusamus dolores ex optio, nemo esse aliquid rerum quisquam doloribus. Sed, inventore? Minus, rem accusamus perspiciatis nobis ducimus delectus quam necessitatibus corrupti iure illum ipsum in voluptatibus, itaque saepe ratione natus illo deleniti facere ipsam at dignissimos maiores blanditiis nam.</p>
+    </div>
+
+    <script>
+        function changeBackground(color){
+            document.body.style.backgroundColor = color;
+            let txt = document.getElementsByClassName("text");
+            if(color == 'black'){
+                for(let elem of txt ){
+                    elem.style.color = 'white';
+                }
+            }
+            else{
+                for(let elem of txt ){
+                    elem.style.color = 'black';
+                }
+            }
+        }
+    </script>
+</body>
+</html>
