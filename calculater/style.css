@@ -1,0 +1,90 @@
+*{margin: 0; padding: 0;}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #edf1f4;
+}
+.dark{
+    background-color: #282c2f;
+}
+.calculater{
+    position: relative;
+    width: 340px;
+    padding: 20px;
+    box-shadow: 15px 15px 25px rgb(165, 158, 163);
+    border-radius: 20px;
+}
+.calculater .dark{
+    background-color: #33393e;
+    box-shadow: 1px 1px 1px rgb(165, 158, 163)
+}
+.calculater .buttons{
+    position: relative;
+    display: grid;
+}
+.calculater .buttons #value{
+    position: relative;
+    grid-column: span 4; 
+    user-select: none;
+    width: 100%;
+    height: 100px;
+    text-align: end;
+    line-height: 100px;
+    box-shadow: inset 5px 5px 10px rgb(165, 163, 163);
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+.calculater .buttons span{
+    padding: 10px;
+    margin: 10px;
+    font-size: 1.2rem;
+    border: 2px solid #edf1f4;
+    box-shadow:  5px 5px 10px rgb(165, 163, 163);
+    border-radius: 10px;
+    color: gray;
+    min-width: 40px;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+}
+.calculater .buttons span:active{
+    box-shadow: inset 5px 5px 10px rgb(165, 163, 163);
+    background-color:  rgb(165, 163, 163);
+    color:  black;
+}
+.calculater .buttons span#clear{
+    grid-column: span 2;
+    box-shadow: 5px 5px 10px rgb(165, 163, 163);
+    background-color: red;
+    color: white;
+}
+.calculater .buttons span#plus{
+    grid-row: span 2;
+    background-color: green;
+    box-shadow: 5px 5px 10px rgb(165, 163, 163);
+    color: white;
+}
+.calculater .buttons span#equal{
+    background-color: blue;
+    box-shadow: 5px 5px 10px rgb(165, 163, 163);
+    color: white;
+}
+.calculater .buttons span#clear:active,
+.calculater .buttons span#plus:active,
+.calculater .buttons span#equal:active{
+    background-color:  rgb(165, 163, 163);
+}
+.togglebtn{
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: #555;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    border: 2px solid whitesmoke;
+    box-shadow: 5px 5px 10px rgba(10, 1, 1, .1);
+
+}
