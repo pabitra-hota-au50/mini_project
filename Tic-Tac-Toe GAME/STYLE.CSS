@@ -1,0 +1,17 @@
+#cointainer{
+    text-align: center;
+}
+.cell{
+    width: 70px;
+    height: 70px;
+    border: 2px solid black;
+    cursor: pointer;
+    font-size: 50px;
+}
+.cellCointainer{
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(3,auto);
+    background-color: antiquewhite;
+    font-family:  cursive;
+}
